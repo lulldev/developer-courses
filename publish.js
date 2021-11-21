@@ -3,9 +3,7 @@ const { execSync } = require("child_process");
 
 glob("courses/**/*.md", function (err, files) {
   files.forEach((file) => {
-    execSync(
-      `./node_modules/.bin/marp ${file} -o docs/publish-materials/${file}.pdf`
-    );
+    execSync(`./node_modules/.bin/marp ${file} -o docs/${file}.pdf`);
   });
 
   execSync("git add ./docs/**/*");
