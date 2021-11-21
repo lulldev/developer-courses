@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "marp ./courses --server",
-    "publish": "marp ./courses/software-arch/lection1/lection-1-paradigms-live.md -o docs/lection-1-paradigms-live.pdf --allow-local-files"
+    "publish": "source publish.sh"
   },
   "author": "",
   "license": "ISC",
