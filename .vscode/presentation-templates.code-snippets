@@ -1,0 +1,13 @@
+{
+	"Code example slide template": {
+		"scope": "markdown",
+		"prefix": "code-example-slide",
+		"body": [
+			"---",
+			"# Slide title",
+			"```js",
+			"```"
+		],
+		"description": "Log output to console"
+	}
+}
