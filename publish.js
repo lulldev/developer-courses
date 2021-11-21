@@ -3,7 +3,6 @@ const { execSync } = require("child_process");
 
 glob("courses/**/*.md", function (err, files) {
   files.forEach((file) => {
-    console.log(file);
     execSync(`./node_modules/.bin/marp ${file} -o docs/${file}.pdf`);
   });
 
