@@ -236,6 +236,9 @@ class MessageSender {
     this.sender.send(message);
   }
 }
+
+const messageSender = new MessageSender(new EmailSender());
+messageSender.send("hello");
 ```
 
 **input:** args
